@@ -1,8 +1,12 @@
 import '../styles/main.scss';
+import getJoke from './components/app';
+import setupButton from './components/buttons';
+import clickHandler from './components/clickHandler';
 
 const init = () => {
-  $('#app').html('<h1>HELLO! You are up and running!</h1>');
-  console.log('YOU ARE UP AND RUNNING!');
+  getJoke.getJoke();
+  setupButton.setupButton();
+  clickHandler.clickHandler();
 };
 
 init();
